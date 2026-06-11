@@ -1,0 +1,173 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#121212;
+    color:white;
+}
+
+/* HEADER */
+
+header{
+    background:#000;
+    padding:15px 20px;
+    border-bottom:1px solid #333;
+}
+
+.logo-container{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.logo-img{
+    width:50px;
+    height:50px;
+    object-fit:cover;
+}
+
+header h1{
+    color:#1DB954;
+    font-size:35px;
+}
+
+/* FLEXBOX */
+
+.container{
+    display:flex;
+}
+
+/* NAVIGATION */
+
+nav{
+    width:280px;
+    min-height:100vh;
+    background:#000;
+    padding:20px;
+}
+
+.menu{
+    margin-bottom:30px;
+}
+
+nav h3{
+    margin-bottom:15px;
+}
+
+/* BOX */
+
+.box{
+    background:#181818;
+    padding:15px;
+    border-radius:10px;
+    margin-bottom:10px;
+    cursor:pointer;
+    transition:all 0.3s ease;
+}
+
+.box:hover{
+    background:#282828;
+    color:#1DB954;
+    transform:translateX(8px);
+}
+
+/* CONTENT */
+
+.content{
+    flex:1;
+    padding:20px;
+}
+
+/* BANNER */
+
+.banner{
+    background:linear-gradient(to right,#1DB954,#191414);
+    padding:60px;
+    border-radius:15px;
+}
+
+.banner h2{
+    font-size:45px;
+    margin-bottom:10px;
+}
+
+.banner p{
+    font-size:18px;
+    margin-bottom:20px;
+}
+
+.banner button{
+    padding:12px 25px;
+    border:none;
+    border-radius:30px;
+    background:white;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.banner button:hover{
+    transform:scale(1.05);
+}
+
+/* SONGS */
+
+.songs{
+    margin-top:30px;
+}
+
+.songs h2{
+    margin-bottom:20px;
+}
+
+/* CSS GRID */
+
+.song-list{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+/* CARD */
+
+.card{
+    background:#181818;
+    border-radius:10px;
+    padding:15px;
+    transition:all 0.3s ease;
+}
+
+.card:hover{
+    background:#282828;
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    border-radius:10px;
+}
+
+.card h3{
+    margin-top:10px;
+    margin-bottom:5px;
+}
+
+.card p{
+    color:#b3b3b3;
+}
+
+/* PLAYER */
+
+.player{
+    position:fixed;
+    bottom:0;
+    width:100%;
+    background:#181818;
+    padding:15px;
+    text-align:center;
+    border-top:1px solid #333;
+}
